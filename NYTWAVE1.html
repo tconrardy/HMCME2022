@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+          margin: 0;
+          font-family: Times New Roman, Helvetica, sans-serif;
+        }
+
+        .topnav {
+          overflow: hidden;
+          background-color: white;
+          border-style: solid;
+          border-width: thin;
+          border-color: #ccc;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav a {
+          float: left;
+          color: black;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 0.875rem;
+        }
+
+        .topnav a:hover {
+          text-decoration: underline;
+        }
+
+        .topnav a.active {
+          color: black;
+          font-weight: bold;
+          /* margin-left: 20%; */
+        }
+
+        .topnav ul {
+           list-style: none;
+           text-align: center;
+           margin: 0px;
+           padding-left: 0px;
+        }
+
+        .topnav ul li {
+           display: inline-block;
+        }
+
+
+                .bottomnav {
+                  overflow: hidden;
+                  background-color: white;
+                  border-top-style: solid;
+                  border-top-width: thin;
+                  border-top-color: #ccc;
+                  font-family:arial;
+                  padding-bottom: 20px;
+                }
+
+                .bottomnav a {
+                  float: left;
+                  text-align: center;
+                  padding: 14px 0px;
+                  padding-right: 8px;
+                  text-decoration: none;
+                  font-size: 0.75rem;
+                  color: gray;
+                }
+
+                .bottomnav a:hover {
+                  text-decoration: underline;
+                }
+
+                .bottomnav a.active {
+                  font-weight: bold;
+                }
+
+                .bottomnav ul {
+                   list-style: none;
+                   text-align: center;
+                   margin: 0px;
+                   padding-left: 0px;
+                }
+
+                .bottomnav ul li {
+                   display: inline-block;
+                }
+
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .flex-container {
+          display: flex;
+          /* flex-wrap: nowrap; */
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        .flex-container > div {
+          width: 100px;
+          margin: 15px;
+          line-height: 75px;
+        }
+
+        .flex-container ul {
+          list-style-type: none;
+          padding-left:0px;
+          font-family: nyt-franklin, arial, sans-serif;
+          margin-top:10px;
+        }
+
+        .flex-container li {
+          padding-bottom:10px;
+          font-size:.8rem;
+        }
+
+        .flex-container a {
+          color:black;
+          text-decoration:none;
+        }
+
+        @media (max-width: 800px) {
+          .flex-container {
+            flex-direction: column;
+          }
+        }
+    </style>
+
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/New_York_Times_T_icon.svg/1530px-New_York_Times_T_icon.svg.png">
+</head>
+<body>
+
+    <!-- NYT HEADER -->
+    <a href="https://www.nytimes.com/"><img src="https://cdn2.downdetector.com/static/uploads/logo/nytimes-logo-png-new-york-times-logo-1250.png" alt="The New York Times" height=45></a>
+
+    <!-- NAVBAR -->
+    <div class="topnav" style="float: center;">
+      <ul>
+          <!-- LIL T -->
+          <span style="float:left;">
+            <li><a href="nytimes.com/?name=styln-russia-ukraine&region=TOP_BANNER&block=storyline_MenuHomepageLink_recirc&action=click&pgtype=Interactive&variant=1_Show" ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/New_York_Times_T_icon.svg/1530px-New_York_Times_T_icon.svg.png" alt="T" height=15;></a></li>
+          </span>
+          <!-- RUSSIA STORIES -->
+          <li><a class="active" href="https://www.nytimes.com/topic/destination/ukraine?name=styln-russia-ukraine&region=TOP_BANNER&block=storyline_menu_recirc&action=click&pgtype=Interactive&variant=0_Control">U.S.-Russia Talks on Ukraine</a></li>
+          <li><a href="https://www.nytimes.com/2022/01/10/world/europe/russia-us-ukraine-talks.html?name=styln-russia-ukraine&region=TOP_BANNER&block=storyline_menu_recirc&action=click&pgtype=Interactive&variant=0_Control&is_new=false">NATO Expansion Deadlock</a></li>
+          <li><a href="https://www.nytimes.com/2022/01/10/world/russia-ukraine-nato-europe.html?name=styln-russia-ukraine&region=TOP_BANNER&block=storyline_menu_recirc&action=click&pgtype=Interactive&variant=0_Control&is_new=false">Ukraine Crisis, Explained</a></li>
+          <li><a href="https://www.nytimes.com/2022/01/10/world/europe/us-russia-cold-war-ukraine.html?name=styln-russia-ukraine&region=TOP_BANNER&block=storyline_menu_recirc&action=click&pgtype=Interactive&variant=0_Control&is_new=false">Echos of Cold War</a></li>
+          <li><a href="https://www.nytimes.com/interactive/2022/01/07/world/europe/ukraine-maps.html?name=styln-russia-ukraine&region=TOP_BANNER&block=storyline_menu_recirc&action=click&pgtype=Interactive&variant=0_Control&is_new=false">Map: Russian Forces Near Ukraine</a></li>
+      </ul>
+    </div>
+
+    <!-- ARTICLE -->
+    <div style="padding-left:30%; padding-right:30%;">
+      <!-- HEADLINE -->
+      <p style="margin-bottom: 0px; font-size: 2.5rem; line-height: 3rem; font-style: italic; font-weight: bold; font-family:nyt-cheltenham, georgia,'times new roman',times,serif;">Ukraine Pursues NATO Membership Following Confrontation with Russia</p>
+      <!-- SUBTEXT -->
+      <p style="margin-top: 15px; font-size: 1.4375rem; line-height: 1.875rem; font-family:nyt-cheltenham, georgia,'times new roman',times,serif;">Following a skirmish on the border between Russia and Ukraine and an uncoordinated joint response from Ukraine and NATO, the military bloc is initiating accession talks with Ukraine.</p>
+    </div>
+
+      <img src="https://static.dw.com/image/60257496_303.jpg" width=70% style:"float:center;"></img>
+      <p style="padding-left:15%; color:#444;">Russian tanks briefly crossed into Ukraine before returning to Russian soil on Monday.</p>
+
+    <div style="padding-left:30%; padding-right:30%; padding-top:20px;">
+      <div style="padding: 1px 0px;">
+        <!-- AUTHOR TAG -->
+        <img align="left" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-cat-wearing-sunglasses-while-sitting-royalty-free-image-1571755145.jpg" width=60px; height=60px; style="object-fit:cover; border-radius: 50%;"></img>
+        <p style="padding-left: 70px; padding-top:10px; font-weight: bold; font-family: arial; font-size: 15px;" >By Kat McKatington</p>
+      </div>
+      <!-- ARTICLE -->
+      <p style="font-family: arial; font-size: 15px; padding-top: 5px; color: gray;">Jan. 20, 2022</p>
+      <div style="font-size: 1.25rem; line-height: 1.875rem;">
+        <p>
+          KYIEV — On Monday, the international community floundered in the face of the <a href="https://www.nytimes.com/2022/01/10/world/russia-ukraine-nato-europe.html?name=styln-russia-ukraine&region=TOP_BANNER&block=storyline_menu_recirc&action=click&pgtype=Article&variant=0_Control&is_new=false">crisis that the West had been dreading</a>:
+           a Russian attack on the Ukranian border. Ukranian military personel stationed along Ukraine's eastern border alerted Ukranian and NATO
+           forces Monday morning that at least 12 Russian tanks had breached the Ukranian border. NATO leaders mobilized troops to meet the threat,
+           but not before Ukraine sent sent 3,000 of its own troops to meet the Russian intruders. Ukraine then called its troops back to coordinate with NATO forces,
+           by which point Russia had already pulled its forces back beyond the border. Russia now claims that the entire situation was a training mishap.
+           Ukranian and NATO military leaders warn that it was a practice invasion.
+        </p>
+        <p>
+          Monday's events only furter exposed inefficiencies in the working relationship between Ukraine and regional military block NATO.
+          Following weeks of troop movements, Russia now has over 110,000 troops stationed on the Ukranian border.
+          Military analysts have raised questions as to how well NATO and Ukranian forces would be able to work together in the face of a full-scale
+          invasion, especially given clunky working protocols between the two formally unaffiliated parties. Ukrainian president Volodymyr Zelensky
+          has raised similar concerns, and publicly called yesterday for the opening of accession talks with NATO.
+        </p>
+        <p>
+          The opening of accession proceedings would be a dramatic shift in NATO policy. While the bloc has formally claimed that it is open to further
+          expansion (and <a href="https://www.nato.int/cps/en/natohq/news_174589.htm">inducted North Macedonia in 2020,</a>) Russian president Vladimir Putin has expressed
+          that NATO expansion will be met with animosity. Induction of Ukraine—Russia's immediate neighbor and seeming military target—would almost
+          certainly further aggravate Russia and further inflame tensions with the West.
+        <p/>
+        <p>
+          US Secretary of State Antony Blinken noted that while the US still seeks peaceful resolution with Russia, that induction of Ukraine into
+          NATO may increase military readiness and send a powerful message to the Russian government. "We could send NATO troops to the border and engage
+          in the same kind of dangerous brinkmanship that we've seen from Russia in recent weeks," Blinken said in a press counference yesterday. "Or we
+          can consider more measured action, like the accession talks proposed by president Zelensky. State Department diplomats will be working closely
+          with our colleagues at the Pentagon to ensure that further steps best protect the livelihoods of the Ukranian people, the values of the
+          American people, and the strategic interests of NATO."
+        </p>
+        <p>
+          Given similar statements of support from a number of other NATO member-states, it seems likely that accession talks may unfold in the
+          days to come. President Putin has remained silent on the issue, but Russian minister of foreign affairs Sergey Lavrov addressed the prospect
+          of Ukranian NATO accession in a press conference during his visit to Beijing earlier today. "Russia has no malicious intentions, but in the face of an ever-expanding military coalition
+          organized around the principle of attacking our nation, what are Russians expected to do? NATO is an ardently anti-Russian military collective,
+          and the threat of NATO expansion will be addressed accordingly."
+        </p>
+      </div>
+
+      <!-- lil box -->
+      <div style="border-style: solid; border-width: thin; border-color: #ccc; margin-bottom:20px;">
+        <div style="padding: 10px 10px; overflow: hidden;"><a href="https://www.nytimes.com/interactive/2022/01/07/world/europe/ukraine-maps.html?action=click&module=RelatedLinks&pgtype=Article">
+            <img src="https://static01.nyt.com/images/2022/01/07/us/ukraine-maps-promo-1641595288415/ukraine-maps-promo-1641595288415-superJumbo.jpg" alt="map" width=20%; style="float:left; padding-right: 10px;">
+            <div style="margin-top:25px;"><a href="https://www.nytimes.com/interactive/2022/01/07/world/europe/ukraine-maps.html?action=click&module=RelatedLinks&pgtype=Article"style="color: black; text-decoration: none; font-size: 20px;">How Russia's Military Is Positioned to Threaten Ukraine</a></div>
+        </a></div>
+
+        <div style="padding: 10px 10px; overflow: hidden;"><a href="https://www.nytimes.com/2022/01/08/us/politics/us-sanctions-russia-ukraine.html?action=click&module=RelatedLinks&pgtype=Article">
+            <img src="https://static01.nyt.com/images/2022/01/09/world/08dc-sanctions-jump/merlin_199916325_7d9a2f22-1196-4ca9-a26d-c05577bf96ae-threeByTwoSmallAt2X.jpg" alt="map" width=20%; style="float:left; padding-right: 10px;">
+            <div style="margin-top:25px;"><a href="https://www.nytimes.com/2022/01/08/us/politics/us-sanctions-russia-ukraine.html?action=click&module=RelatedLinks&pgtype=Article"style="color: black; text-decoration: none; font-size: 20px;">U.S. Details Costs of a Russian Invasion of Ukraine</a></div>
+            <a href="https://www.nytimes.com/2022/01/08/us/politics/us-sanctions-russia-ukraine.html?action=click&module=RelatedLinks&pgtype=Article"style="color: #555; text-decoration: none; font-size: 15px;">Jan. 8, 2020</a>
+        </a></div>
+
+        <div style="padding: 10px 10px; overflow: hidden;"><a href="https://www.nytimes.com/2022/01/09/world/europe/ukraine-russia-negotiations.html?action=click&module=RelatedLinks&pgtype=Article">
+            <img src="https://static01.nyt.com/images/2022/01/09/world/09ukraine01/09ukraine01-threeByTwoSmallAt2X.jpg" alt="map" width=20%; style="float:left; padding-right: 10px;">
+            <div style="margin-top:10px;"><a href="https://www.nytimes.com/2022/01/09/world/europe/ukraine-russia-negotiations.html?action=click&module=RelatedLinks&pgtype=Article"style="color: black; text-decoration: none; font-size: 20px;">As Russia and U.S. Debate Ukraine, Ukraine Would Like a Say</a></div>
+            <a href="https://www.nytimes.com/2022/01/09/world/europe/ukraine-russia-negotiations.html?action=click&module=RelatedLinks&pgtype=Article"style="color: #555; text-decoration: none; font-size: 15px;">Jan. 9, 2020</a>
+        </a></div>
+      </div>
+
+      <!-- REPORTER DESCRIPTION -->
+      <p style="font-family:arial; color:#555">Kat McKatington is a reporter at the New York Times's Meowscow Bureau. Kat has been reporting for over 7 years, and covered local litterbox politics before making the jump to reporting on foreign affairs. <a style="color: #557AB7; text-decoration: underline;">@KMcKat</a></p>
+    </div>
+
+    <!-- GREY NAV AT BOTTOM -->
+    <div style="margin-left:12%; margin-right:12%;">
+        <div style="border-bottom: 1px solid #ccc;"><div style="border-bottom: 1px solid white;"><div style="border-bottom: 2px solid #ccc;">
+          <p><br></p>
+        </div></div></div>
+
+        <a href="https://www.nytimes.com/"><img src="https://cdn2.downdetector.com/static/uploads/logo/nytimes-logo-png-new-york-times-logo-1250.png" alt="The New York Times" height=45 style="align=left; margin-left:-15px; margin-right:0px; margin-bottom:0px;"></a>
+
+        <div class="flex-container">
+            <!-- NEWS -->
+            <ul>
+              <li><a style="font-weight: bold;">NEWS</a></li>
+              <li><a href="https://www.nytimes.com/">Home Page</a></li>
+              <li><a href="https://www.nytimes.com/section/world">World</a></li>
+              <li><a href="https://www.nytimes.com/news-event/coronavirus">Coronavirus</a></li>
+              <li><a href="https://www.nytimes.com/section/us">U.S.</a></li>
+              <li><a href="https://www.nytimes.com/section/politics">Politics</a></li>
+              <li><a href="https://www.nytimes.com/section/nyregion">New York</a></li>
+              <li><a href="https://www.nytimes.com/section/business">Business</a></li>
+              <li><a href="https://www.nytimes.com/section/technology">Tech</a></li>
+              <li><a href="https://www.nytimes.com/section/science">Science</a></li>
+              <li><a href="https://www.nytimes.com/section/sports">Sports</a></li>
+              <li><a href="https://www.nytimes.com/news-event/winter-olympics-beijing">Winter Olympics</a></li>
+              <li><a href="https://www.nytimes.com/interactive/2021/us/wildfires-air-quality-tracker.html">Wildfire Tracker</a></li>
+              <li><a href="https://www.nytimes.com/section/obituaries">Obituaries</a></li>
+              <li><a href="https://www.nytimes.com/section/todayspaper">Today's Paper</a></li>
+              <li><a href="https://www.nytimes.com/section/corrections">Corrections</a></li>
+              <li><a href="https://www.nytimes.com/trending/">Trending</a></li>
+            </ul>
+            <!-- OPINION -->
+            <ul>
+              <li><a style="font-weight: bold;">OPINION</a></li>
+              <li><a href="https://www.nytimes.com/section/opinion">Today's Opinion</a></li>
+              <li><a href="https://www.nytimes.com/section/opinion/columnists">Columnists</a></li>
+              <li><a href="https://www.nytimes.com/section/opinion/editorials">Editorials</a></li>
+              <li><a href="https://www.nytimes.com/section/opinion/contributors">Guest Essays</a></li>
+              <li><a href="https://www.nytimes.com/section/opinion/letters">Letters</a></li>
+              <li><a href="https://www.nytimes.com/section/opinion/sunday">Sunday Review</a></li>
+              <li><a href="https://www.nytimes.com/section/opinion/sunday">Video: Opinion</a></li>
+            </ul>
+            <!-- ARTS -->
+            <ul>
+              <li><a style="font-weight: bold;">ARTS</a></li>
+              <li><a href="https://www.nytimes.com/section/arts">Today's Arts</a></li>
+              <li><a href="https://www.nytimes.com/section/arts/design">Art & Design</a></li>
+              <li><a href="https://www.nytimes.com/section/books">Books</a></li>
+              <li><a href="https://www.nytimes.com/books/best-sellers/">Best Sellers Book List</a></li>
+              <li><a href="https://www.nytimes.com/section/arts/dance">Dance</a></li>
+              <li><a href="https://www.nytimes.com/section/movies">Movies</a></li>
+              <li><a href="https://www.nytimes.com/section/arts/music">Music</a></li>
+              <li><a href="https://www.nytimes.com/spotlight/pop-culture">Pop Culture</a></li>
+              <li><a href="https://www.nytimes.com/section/arts/television">Television</a></li>
+              <li><a href="https://www.nytimes.com/section/theater">Theater</a></li>
+              <li><a href="https://www.nytimes.com/video/arts">Video: Arts</a></li>
+            </ul>
+            <!-- LIVING -->
+            <ul>
+              <li><a style="font-weight: bold;">LIVING</a></li>
+              <li><a href="https://www.nytimes.com/section/automobiles">Automotive</a></li>
+              <li><a href="https://www.nytimes.com/crosswords">Games</a></li>
+              <li><a href="https://www.nytimes.com/section/education">Education</a></li>
+              <li><a href="https://www.nytimes.com/section/food">Food</a></li>
+              <li><a href="https://www.nytimes.com/section/health">Health</a></li>
+              <li><a href="https://www.nytimes.com/section/jobs">Jobs</a></li>
+              <li><a href="https://www.nytimes.com/section/fashion/weddings">Love</a></li>
+              <li><a href="https://www.nytimes.com/section/magazine">Magazine</a></li>
+              <li><a href="https://www.nytimes.com/section/parenting">Parenting</a></li>
+              <li><a href="https://www.nytimes.com/section/realestate">Real Estate</a></li>
+              <li><a href="https://www.nytimes.com/section/style">Style</a></li>
+              <li><a href="https://www.nytimes.com/section/t-magazine">T Magazine</a></li>
+              <li><a href="https://www.nytimes.com/section/travel">Travel</a></li>
+            </ul>
+            <!-- MORE -->
+            <ul>
+              <li><a style="font-weight: bold;">MORE</a></li>
+              <li><a href="https://www.nytimes.com/section/reader-center">Reader Center</a></li>
+              <li><a href="https://www.nytimes.com/wirecutter/">Wirecutter</a></li>
+              <li><a href="https://cooking.nytimes.com/">Cooking</a></li>
+              <li><a href="https://www.nytimes.com/spotlight/nyt-events">Live Events</a></li>
+              <li><a href="https://www.nytimes.com/section/learning">The Learning Network</a></li>
+              <li><a href="https://www.nytimes.com/subscription/info/tools-and-services">Tools & Services</a></li>
+              <li><a href="https://www.nytimes.com/spotlight/podcasts">Podcasts</a></li>
+              <li><a href="https://www.nytimes.com/section/multimedia">Multimedia</a></li>
+              <li><a href="https://www.nytimes.com/section/lens">Photography</a></li>
+              <li><a href="https://www.nytimes.com/video">Video</a></li>
+              <li><a href="https://timesmachine.nytimes.com/browser">TimesMachine</a></li>
+              <li><a href="https://store.nytimes.com/">NYT Store</a></li>
+              <li><a href="https://myaccount.nytimes.com/seg">Manage My Account</a></li>
+              <li><a href="https://nytlicensing.com/">NYTLicensing</a></li>
+            </ul>
+            <!-- Side Panel -->
+            <ul style="border-left-style: solid; border-left-width: thin; border-left-color: #ccc; padding-left:20px;">
+              <li><a style="font-weight: bold;">SUBSCRIBE</a></li>
+              <li><a style="font-weight: bold; font-size:1rem;" href="https://www.nytimes.com/newsletters">Newsletters</a></li>
+              <li><a style="font-weight: bold; font-size:1rem;" href="https://www.nytimes.com/gift">Gift Subscriptions</a></li>
+              <li><a style="font-weight: bold; font-size:1rem;" href="https://www.nytimes.com/subscription/games?campaignId=9LRLQ">Games</a></li>
+              <li><a style="font-weight: bold; font-size:1rem;" href="https://www.nytimes.com/subscription/cooking.html">Cooking</a></li>
+              <li><a style="font-size:.7rem; color: #333;" href="https://www.nytimes.com/corporateleftnav">Corporate Subscriptions</a></li>
+              <li><a style="font-size:.7rem; color: #333; padding-bottom: 10px; padding-right: 150px; border-bottom-style:solid; border-bottom-width: thin; border-bottom-color: #ccc;" href="https://www.nytimes.com/educationleftnav">Education Rate</a></li>
+              <li style="margin-top: 8px;"><a style="font-size:.7rem; color: #333;" href="https://help.nytimes.com/hc/en-us/sections/115003859548-Apps">Mobile Applications</a></li>
+              <li><a style="font-size:.7rem; color: #333;" href="https://nytimes.pressreader.com/">Replica Edition</a></li>
+              <li><a style="font-size:.7rem; color: #333;" href="https://www.nytimes.com/international/?action=click&region=Footer&pgtype=Homepage">International</a></li>
+              <li><a style="font-size:.7rem; color: #333;" href="https://www.nytimes.com/ca/?action=click&region=Footer&pgtype=Homepage">Canada</a></li>
+              <li><a style="font-size:.7rem; color: #333;" href="https://www.nytimes.com/es/?action=click&region=Footer&pgtype=Homepage">Español</a></li>
+              <li><a style="font-size:.7rem; color: #333;" href="https://cn.nytimes.com/">中文网</a></li>
+            </ul>        </div>
+
+        <div class="bottomnav" style="float: center;">
+          <ul>
+              <li><a href="https://help.nytimes.com/hc/en-us/articles/115014792127-Copyright-notice">© 2022 The HMC York Times Company</a></li>
+              <li><a href="https://www.nytco.com/">NYTCo</a></li>
+              <li><a href="https://help.nytimes.com/hc/en-us/articles/115015385887-Contact-Us">Contact Us</a></li>
+              <li><a href="https://help.nytimes.com/hc/en-us/articles/115015727108-Accessibility">Accessibility</a></li>
+              <li><a href="https://www.nytco.com/careers/">Work with us</a></li>
+              <li><a href="https://nytmediakit.com/">Advertise</a></li>
+              <li><a href="https://www.tbrandstudio.com/">T Brand Studio</a></li>
+              <li><a href="https://www.nytimes.com/privacy/cookie-policy#how-do-i-manage-trackers">Your Ad Choices</a></li>
+              <li><a href="https://www.nytimes.com/privacy/privacy-policy">Terms of Service</a></li>
+              <li><a href="https://help.nytimes.com/hc/en-us/articles/115014893968-Terms-of-sale">Terms of Sale</a></li>
+              <li><a href="https://www.nytimes.com/sitemap/">Site Map</a></li>
+              <li><a href="https://help.nytimes.com/hc/en-us">Help</a></li>
+              <li><a href="https://www.nytimes.com/subscription?campaignId=37WXW">Subscriptions</a></li>
+          </ul>
+        </div>
+
+    </div>
+</body>
+</html>
